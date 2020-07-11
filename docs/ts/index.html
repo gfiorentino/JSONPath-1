@@ -65,7 +65,8 @@
 				<p><a href="https://www.npmjs.com/package/jsonpath-plus"><img src="https://img.shields.io/npm/v/jsonpath-plus.svg" alt="npm"></a>
 					<a href="https://david-dm.org/s3u/JSONPath"><img src="https://img.shields.io/david/s3u/JSONPath.svg" alt="Dependencies"></a>
 				<a href="https://david-dm.org/s3u/JSONPath?type=dev"><img src="https://img.shields.io/david/dev/s3u/JSONPath.svg" alt="devDependencies"></a></p>
-				<p><a href="badges/tests-badge.svg"><img src="https://raw.githubusercontent.com/s3u/JSONPath/master/badges/tests-badge.svg?sanitize=true" alt="testing badge"></a>
+				<p><a href="https://travis-ci.com/github/JSONPath-Plus/JSONPath"><img src="https://travis-ci.org/JSONPath-Plus/JSONPath.svg?branch=master" alt="Build Status"></a>
+					<a href="badges/tests-badge.svg"><img src="https://raw.githubusercontent.com/s3u/JSONPath/master/badges/tests-badge.svg?sanitize=true" alt="testing badge"></a>
 				<a href="badges/coverage-badge.svg"><img src="https://raw.githubusercontent.com/s3u/JSONPath/master/badges/coverage-badge.svg?sanitize=true" alt="coverage badge"></a></p>
 				<p><a href="https://snyk.io/test/github/s3u/JSONPath"><img src="https://snyk.io/test/github/s3u/JSONPath/badge.svg" alt="Known Vulnerabilities"></a>
 					<a href="https://lgtm.com/projects/g/s3u/JSONPath/alerts"><img src="https://img.shields.io/lgtm/alerts/g/s3u/JSONPath.svg?logo=lgtm&logoWidth=18" alt="Total Alerts"></a>
@@ -147,16 +148,21 @@
 <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;node_modules/core-js-bundle/minified.js&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 
 <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;node_modules/jsonpath-plus/dist/index-umd.js&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
 <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+
 <span class="hljs-keyword">const</span> result = JSONPath.JSONPath({<span class="hljs-attr">path</span>: <span class="hljs-string">&#x27;...&#x27;</span>, <span class="hljs-attr">json</span>: ...});
+
 </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></code></pre>
 				<a href="#esm-modern-browsers" id="esm-modern-browsers" style="color: inherit; text-decoration: none;">
 					<h3>ESM (Modern browsers)</h3>
 				</a>
 				<p>You may also use ES6 Module imports (for modern browsers):</p>
 				<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;module&quot;</span>&gt;</span><span class="javascript">
+
 <span class="hljs-keyword">import</span> {JSONPath} <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;./node_modules/jsonpath-plus/dist/index-es.js&#x27;</span>;
 <span class="hljs-keyword">const</span> result = JSONPath({<span class="hljs-attr">path</span>: <span class="hljs-string">&#x27;...&#x27;</span>, <span class="hljs-attr">json</span>: ...});
+
 </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></code></pre>
 				<a href="#esm-bundlers" id="esm-bundlers" style="color: inherit; text-decoration: none;">
 					<h3>ESM (Bundlers)</h3>
@@ -178,6 +184,7 @@
 					the callback function being executed 0 to N times depending
 					on the number of independent items to be found in the result.
 				See the docs below for more on <code>JSONPath</code>&#39;s available arguments.</p>
+				<p>See also the <a href="https://jsonpath-plus.github.io/JSONPath/docs/ts/">API docs</a>.</p>
 				<a href="#properties" id="properties" style="color: inherit; text-decoration: none;">
 					<h3>Properties</h3>
 				</a>
